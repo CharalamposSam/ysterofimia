@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,21 +6,99 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arimo', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  height: 100vh;
 }
 
 header {
-  width: 250px;
-  background: red;
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  font-size: 16px;
+  color: #999;
+  overflow: scroll;
+}
+
+header div {
+  width: 220px;
+  height: 180px;
+  margin: 50px auto;
+  background: #999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header p {
+  margin: 0;
+}
+
+header ul {
+  list-style: none;
+  margin: 50px auto;
+  padding: 0;
+  width: 100%;
+}
+
+header ul a {
+  text-decoration: none;
+  width: 100%;
+  color: #999;
+}
+
+header .basicMenu li {
+  border-top: 1px solid #999;
+  padding: 12px 0;
+}
+
+header .basicMenu li:hover {
+  color: #272727;
+}
+
+header .socialMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .socialMenu a {
+  text-align: center;
 }
 
 main {
-  width: calc( 100vw - 250px);
-  background: green;
+  width: 100%;
+  margin-left: 270px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: (1fr)[3];
+      grid-template: auto/repeat(3, 1fr);
+  padding: 30px 50px 30px 30px;
+  grid-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main div {
+  width: 200px;
+  height: 300px;
+  background: red;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
