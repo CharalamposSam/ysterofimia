@@ -22,16 +22,20 @@ header {
     color: #999;
     overflow: scroll;
 
-    div {
-        width: 220px;
-        height: 180px;
-        margin: 50px auto;
-        background: #999;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        cursor: pointer;
+    a {
+        text-decoration: none;
+
+        div {
+            width: 220px;
+            height: 180px;
+            margin: 50px auto;
+            background: #999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+        }
     }
 
     p {
@@ -177,58 +181,89 @@ main {
    
     body {
          display: block;
-
     }
 
-        main {
-            grid-template: auto / 2fr;
-            margin: 0;
-            padding: 0 10px;
+    main {
+        grid-template: auto / 2fr;
+        margin: 0;
+        padding: 0 10px 50px;
+    }
+
+    header {
+        position: relative;
+        width: 100vw;
+        height: auto;
+
+        div {
+            margin: 0 auto 30px;
+            width: 100%;
+            max-width: 600px;
         }
 
-        header {
+        p {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        span {
+            display: block;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            margin: 20px 0 10px;
+            color: rgb(41, 41, 41);
+
+            i {
+                font-size: 10px;
+                transition: transform .5s ease-in-out;
+            }
+        }
+
+        .basicMenu {
+            overflow: hidden;
+            height: 10px;
+            transition: height .5s ease-in-out;
             position: relative;
-            width: 100vw;
-            height: auto;
-
-            div {
-                margin: 0 auto 30px;
-                width: 100%;
-                max-width: 600px;
-            }
-
-            p {
-                margin: 0 auto;
-                width: 100%;
-                max-width: 600px;
-            }
-
-            span {
-                display: block;
-                width: 100%;
-                text-align: center;
-                cursor: pointer;
-                margin: 20px 0 10px;
-                color: rgb(41, 41, 41);
-
-                i {
-                    font-size: 10px;
-                    transition: transform .5s ease-in-out;
-                }
-            }
-
-            .basicMenu {
-                overflow: hidden;
-                height: 10px;
-                transition: height .5s ease-in-out;
-                position: relative;
-                margin: 0;
-            }
-
-            .socialMenu {
-                justify-content: start;
-                margin-bottom: 0;
-            }
-        
+            margin: 0;
         }
+
+        .socialMenu {
+            justify-content: start;
+            margin-bottom: 0;
+        }
+    
+    }
+}
+
+.artistContainer {
+    width: 100%;
+    margin-left: 270px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    div {
+        padding: 30px 50px 30px 30px;
+        width: 100%;
+        max-width: 800px;
+        overflow: hidden;
+        
+
+        h2 {
+            margin: 45px 0;
+        }
+
+        p {
+            color: #777;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    
 }

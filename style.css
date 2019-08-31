@@ -25,7 +25,11 @@ header {
   overflow: scroll;
 }
 
-header div {
+header a {
+  text-decoration: none;
+}
+
+header a div {
   width: 220px;
   height: 180px;
   margin: 50px auto;
@@ -215,7 +219,7 @@ main div:hover:after, main div:hover:before {
     -ms-grid-columns: 2fr;
         grid-template: auto / 2fr;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 10px 50px;
   }
   header {
     position: relative;
@@ -261,5 +265,39 @@ main div:hover:after, main div:hover:before {
             justify-content: start;
     margin-bottom: 0;
   }
+}
+
+.artistContainer {
+  width: 100%;
+  margin-left: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+
+.artistContainer div {
+  padding: 30px 50px 30px 30px;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.artistContainer div h2 {
+  margin: 45px 0;
+}
+
+.artistContainer div p {
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.artistContainer div img {
+  width: 100%;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
