@@ -215,6 +215,7 @@ main div:hover:after, main div:hover:before {
     -ms-grid-columns: 2fr;
         grid-template: auto / 2fr;
     margin: 0;
+    padding: 0 10px;
   }
   header {
     position: relative;
