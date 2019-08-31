@@ -16,6 +16,7 @@
             on showcasing your work in a clean and minimal way.
 
         </p>
+        <span>MENU <i class="fas fa-arrow-down"></i></span>
         <ul class="basicMenu">
             <a href="#"><li>Menu 1</li></a>
             <a href="#"><li>Menu 2</li></a>
@@ -41,5 +42,23 @@
         <div style="height: 100px;"></div>
         <div style="height: 300px;"></div>
     </main>
+
+    <script>
+        const menuBtn = document.querySelector( 'header span' ),
+              basicMenu = document.querySelector( 'header .basicMenu' )
+
+            let flag = true
+            menuBtn.addEventListener( 'click', () => {
+
+                if ( flag ) {
+                    basicMenu.style.height = ` 170px `
+                    flag = false
+                } else {
+                    basicMenu.style.height = ` 0 `
+                    flag = true
+                }
+                
+            } )
+    </script>
 </body>
 </html>
