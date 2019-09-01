@@ -285,8 +285,11 @@ main {
 }
 
 @media only screen and (max-width: 700px) {
+    .artistContainer {
+        margin-left: 0;
+    }
+
     .article {
         margin-left: 0;
     }
-    
 }
