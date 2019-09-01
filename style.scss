@@ -60,6 +60,7 @@ header {
     }
 
     .basicMenu {
+       // height: auto;
 
          li {
              border-top: 1px solid #999;
@@ -233,7 +234,6 @@ main {
             justify-content: start;
             margin-bottom: 0;
         }
-    
     }
 }
 
@@ -265,6 +265,28 @@ main {
             width: 100%;
             display: block;
         }
+    }
+    
+}
+
+.article {
+    width: 100%;
+    margin-left: 270px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    .articleContainer {
+        padding: 30px 50px 30px 30px;
+        width: 100%;
+        max-width: 800px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .article {
+        margin-left: 0;
     }
     
 }
