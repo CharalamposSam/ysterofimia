@@ -258,6 +258,7 @@ main div:hover:after, main div:hover:before {
     transition: height .5s ease-in-out;
     position: relative;
     margin: 0;
+    height: 1px;
   }
   header .socialMenu {
     -webkit-box-pack: start;

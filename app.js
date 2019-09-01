@@ -8,7 +8,7 @@ menuBtn.addEventListener( 'click', () => {
         menuArrow.style.transform = ` rotateX( 180deg ) `
         flag = false
     } else {
-        basicMenu.style.height = ` 0 `
+        basicMenu.style.height = ` 1px `
         menuArrow.style.transform = ` rotateX( 0 ) `
         flag = true
     }
